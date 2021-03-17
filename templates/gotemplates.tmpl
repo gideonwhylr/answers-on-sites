@@ -5,7 +5,10 @@
 <html>
     <body>
         <h1> Welcome to Luc's Electronics - {{.name}}</h1>
-        <p>{{.address}}</p>
+        <p>
+         {{ range $key, $value := .address }}
+           <li><strong>{{ $key }}</strong>: {{ $value }}</li>
+        {{ end }} </p>
         <p>Hours: {{.hours}}</p>
     </body>
 </html>
