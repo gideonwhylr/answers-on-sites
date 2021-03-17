@@ -6,14 +6,14 @@
     "en"
   ],
 	"features": [
-//		{
-//			"name": "Location Page",
-//			"streamLabel": "account-3434922/locations",
-//			"goTemplateEntityPageSet": {
-//				"template": "location.source",
-//				"urlTemplate": "location.url"
-//			}
-//		}
+		{
+			"name": "Location Page",
+			"streamLabel": "account-3434922/locations",
+			"goTemplateEntityPageSet": {
+				"template": "location.source",
+				"urlTemplate": "location.url"
+			}
+		}
 	],
   "requireArtifactBuild": true,
   "ci_config": {
@@ -23,7 +23,7 @@
     "serve_setup_cmd": "./ci/serve_setup.sh",
     "serve_cmd": "./ci/serve.sh",
     "rebuild_cmd": "",
-    "output_directories": [ "desktop"],
+    "output_directories": [ "desktop", "templates"],
     "dependencies": {
       "install_deps_cmd": "./ci/install_deps.sh",
       "required_files": [
