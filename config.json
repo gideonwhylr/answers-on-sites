@@ -13,13 +13,6 @@
 				"template": "location.source",
 				"urlTemplate": "location.url"
 			}
-		},
-    {
-			"name": "CEO Page",
-			"goTemplateEntityPageSet": {
-				"template": "ceo.source",
-				"urlTemplate": "ceo.url"
-			}
 		}
 	],
   "requireArtifactBuild": true,
