@@ -14,7 +14,7 @@ class location_standardCardComponent extends BaseCard['location-standard'] {
   dataForRender(profile) {
     return {
       title: profile.name, // The header text of the card
-      url: profile.landingPageUrl || profile.c_slug, // If the card title is a clickable link, set URL here
+      url: profile.c_slug, // If the card title is a clickable link, set URL here
       target: '_top', // If the title's URL should open in a new tab, etc.
       titleEventOptions: this.addDefaultEventOptions(), // The event options for title click analytics
       // subtitle: '', // The sub-header text of the card
